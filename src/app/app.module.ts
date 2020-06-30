@@ -4,7 +4,7 @@ import {HttpModule} from '@angular/http';
 import { AppComponent } from './app.component';
 import { LikeComponent } from './like/like.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CourseFormComponent } from './course-form/course-form.component';
 import { SignupFormComponent } from './signup-form/signup-form/signup-form.component';
 @NgModule({
@@ -18,7 +18,8 @@ import { SignupFormComponent } from './signup-form/signup-form/signup-form.compo
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
