@@ -9,6 +9,9 @@ import { CourseFormComponent } from './course-form/course-form.component';
 import { SignupFormComponent } from './signup-form/signup-form/signup-form.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 import { PasswordFormComponent } from './password-form/password-form.component';
+import { PostComponent } from './post/post.component';
+import { PostService } from './services/post.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,8 @@ import { PasswordFormComponent } from './password-form/password-form.component';
     CourseFormComponent,
     SignupFormComponent,
     NewCourseFormComponent,
-    PasswordFormComponent
+    PasswordFormComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ import { PasswordFormComponent } from './password-form/password-form.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
